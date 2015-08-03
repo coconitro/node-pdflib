@@ -1,0 +1,16 @@
+{
+  "name": "pdflib",
+  "version": "0.0.1",
+  "description": "Node bindings for pdflib",
+  "main": "index.js",
+  "author": "Coleman Nitroy",
+  "devDependencies": {
+    "ffi-generate": "0.0.8"
+  },
+  "dependencies": {
+    "libclang": "0.0.11",
+    "ref": "^1.0.2",
+    "ref-array": "^1.1.1",
+    "ref-struct": "^1.0.1"
+  }
+}
