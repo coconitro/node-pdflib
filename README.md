@@ -1,4 +1,4 @@
-# node-pdflib
+# Node Pdflib
 
 This is a ffi wrapper for pdflib (http://pdflib.com) for use with node.js. 
 

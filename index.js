@@ -331,7 +331,7 @@ var pdf_jmpbuf = exports.pdf_jmpbuf = Struct({
 });
 var pdf_jmpbufPtr = exports.pdf_jmpbufPtr = ref.refType(pdf_jmpbuf);
 
-exports.pdflib = new FFI.Library('external/pdflib/9.0.5/osx/lib/libpdf', {
+exports.pdflib = new FFI.Library('libpdf', {
   PDF_activate_item: [ref.types.void, [
     PDF,
     ref.types.int32,
