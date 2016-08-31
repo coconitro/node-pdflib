@@ -20,7 +20,7 @@ g++ -fpic -shared -framework Carbon -Wl,-all_load libpdf.a -Wl -framework Carbon
 #### Linux
 
 ```
-g++ -fpic -shared -Wl,-all_load libpdf.a -Wl -o libpdf.dylib
+g++ -fpic -shared -Wl,-whole-archive libpdf.a -Wl,-no-whole-archive -o libpdf.so
 ```
 
 ## Usage
