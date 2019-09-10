@@ -132,6 +132,7 @@ var PDFlib_api_s = exports.PDFlib_api_s = Struct({
   PDF_create_action: voidPtr,
   PDF_create_annotation: voidPtr,
   PDF_create_bookmark: voidPtr,
+  PDF_create_devicen: voidPtr,
   PDF_create_field: voidPtr,
   PDF_create_fieldgroup: voidPtr,
   PDF_create_gstate: voidPtr,
@@ -703,6 +704,10 @@ exports.pdflib = new FFI.Library('libpdf', {
     ref.types.CString,
     ref.types.int32,
     ref.types.CString,
+  ]],
+  PDF_create_devicen: [ref.types.int32, [
+    PDFPtr,
+    ref.types.CString
   ]],
   PDF_create_field: [ref.types.void, [
     PDFPtr,
